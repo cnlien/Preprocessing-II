@@ -1,1 +1,15 @@
-// Mixins in here
+// Mixins in here.btn {
+
+
+.buttonGenerator (@width, @height, @bg-color, @font-color, @font-size){
+  border-radius: 1rem;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: @width;
+  line-height: @height;
+  background-color: @bg-color;
+  font-size: @font-size;
+  color: @font-color;
+}

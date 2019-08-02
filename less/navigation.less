@@ -1,1 +1,67 @@
-// Navigation Styles here
+.mainNavigation {
+  border-bottom: 2px dashed grey;
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 28%;
+      padding: 2% 0 1% 2%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 2% 0;
+        margin: 2% 0;
+        text-align: center;
+      }
+    }
+
+  }
+
+  nav {
+    display: flex;
+    width: 70%;
+    align-items: stretch;
+    justify-content: flex-end;
+
+    @media @mobile {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      color: black;
+      font-size: 150%;
+      text-decoration: none;
+      transition: background-color .3s ease;
+
+      @media @mobile {
+        margin-bottom: 1em;
+      }
+    }
+
+    a:hover {
+      background-color:@eastern-blue ;
+      color: white;
+
+      @media @mobile {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+
+}
